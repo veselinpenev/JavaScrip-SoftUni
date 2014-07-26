@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Properties</title>
+<script>
+function displayProperties()  {
+	var properties=[];
+    for (var prop in document) {
+        properties.push(prop);   
+    } 
+	properties.sort();
+	for (var prop in properties) {
+        document.write(properties[prop]+"<br>");   
+    }
+}
+</script>
+</head>
+
+<body>
+	<input type="button" onclick="displayProperties()" value="Покажи" />
+</body>
+
+</html>
